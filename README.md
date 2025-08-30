@@ -7,17 +7,21 @@
 
 ## 📋 Sobre o Projeto
 
-Este projeto demonstra o uso da biblioteca **DocETL** para análise inteligente de documentos jurídicos, especificamente a Lei Geral de Proteção de Dados (LGPD) do Brasil. O sistema utiliza processamento de linguagem natural com IA para extrair, analisar e resumir informações de documentos complexos de forma estruturada e temática.
+Este projeto demonstra o uso da biblioteca **DocETL** para análise inteligente de documentos jurídicos, especificamente a Lei Geral de Proteção de Dados (LGPD) do Brasil. O sistema utiliza **Docling** para extração automática de texto de PDFs e **DocETL** com processamento de linguagem natural com IA para extrair, analisar e resumir informações de documentos complexos de forma estruturada e temática.
 
 ### 🎯 Objetivos
 
+- **Extração Automática**: Utilizar Docling para converter automaticamente PDFs em texto processável
 - **Processamento Inteligente**: Utilizar IA para analisar documentos jurídicos extensos
 - **Extração Estruturada**: Transformar texto não estruturado em dados organizados por tópicos
 - **Automação de Análise**: Criar pipelines automatizados para processamento de documentos
+- **Organização de Dados**: Manter estrutura organizada de arquivos de entrada e saída
 - **Demonstração Prática**: Mostrar as capacidades da biblioteca DocETL em cenários reais
 
 ### 🚀 Funcionalidades Principais
 
+- **Extração Inteligente de Documentos**: Conversão automática de PDFs para texto usando Docling
+- **Organização Estruturada**: Separação automática de arquivos em pastas organizadas (PDFs e textos)
 - **Split de Documentos**: Divisão automática de documentos longos em seções gerenciáveis
 - **Análise com IA**: Processamento individual de cada seção usando GPT-4o-mini
 - **Agrupamento Inteligente**: Consolidação de informações por tópicos relacionados
@@ -30,11 +34,13 @@ Este projeto demonstra o uso da biblioteca **DocETL** para análise inteligente 
 
 - **Python 3.8+** - Linguagem principal
 - **DocETL 0.2.5** - Biblioteca de processamento de documentos
+- **Docling 2.29.0** - Biblioteca para extração e conversão de documentos (PDF, DOCX, HTML)
 - **OpenAI GPT-4o-mini** - Modelo de IA para análise de texto
 - **PyYAML 6.0.2** - Configuração de pipelines
 
 ### Dependencies Principais
 
+- **Docling 2.29.0** - Extração e conversão de documentos
 - **PyMuPDF 1.26.4** - Processamento de PDFs
 - **Pandas 2.3.2** - Manipulação de dados
 - **NumPy 2.3.2** - Computação numérica
@@ -163,6 +169,22 @@ docetl version
 
 ## 🚀 Como Usar
 
+### 🔄 **Novo Fluxo de Trabalho com Docling**
+
+O projeto agora utiliza um **fluxo automatizado e organizado** para processamento de documentos:
+
+1. **📁 Organização Automática de Arquivos:**
+
+   - **Entrada:** PDFs são colocados na pasta `dados_fonte/pdfs/`
+   - **Processamento:** O script `make_dataset_docling.py` extrai automaticamente o texto usando Docling
+   - **Saída Organizada:** Textos extraídos são salvos em `dados_fonte/textos/`
+   - **Dataset Final:** JSON é gerado na raiz do projeto para uso pelo DocETL
+
+2. **🔄 Processamento Automatizado:**
+   - **Extração:** Docling converte PDFs para texto com alta precisão
+   - **Estruturação:** Script organiza automaticamente os arquivos
+   - **Integração:** Dataset JSON é gerado no formato correto para o DocETL
+
 ### Execução Básica
 
 #### **Linux/macOS:**
@@ -170,7 +192,11 @@ docetl version
 1. **Prepare o Dataset (o arquivo já está preparado, testar com outro arquivo, neste caso faça as alterações necessárias no script antes de executa-lo)**
 
 ```bash
-python make_lgpd_dataset.py
+# O script agora automatiza todo o processo:
+# - Extrai texto do PDF usando Docling
+# - Organiza arquivos em pastas estruturadas
+# - Gera o dataset JSON automaticamente
+python make_dataset_docling.py
 ```
 
 2. **Execute o Pipeline**
@@ -191,10 +217,14 @@ ls intermediate_results/
 
 #### **Windows:**
 
-1. **Prepare o Dataset Prepare o Dataset (o arquivo já está preparado, testar com outro arquivo, neste caso faça as alterações necessárias no script antes de executa-lo)**
+1. **Prepare o Dataset (o arquivo já está preparado, testar com outro arquivo, neste caso faça as alterações necessárias no script antes de executa-lo)**
 
 ```cmd
-python make_lgpd_dataset.py
+# O script agora automatiza todo o processo:
+# - Extrai texto do PDF usando Docling
+# - Organiza arquivos em pastas estruturadas
+# - Gera o dataset JSON automaticamente
+python make_dataset_docling.py
 ```
 
 2. **Execute o Pipeline**
@@ -230,26 +260,77 @@ Edite o arquivo `pipeline.yaml` para:
 - Ajustar parâmetros de processamento
 - Adicionar novas operações
 
+### 🆕 **Vantagens do Novo Sistema com Docling**
+
+- **🔄 Automação Completa:** Não é mais necessário extrair manualmente texto de PDFs
+- **📁 Organização Estruturada:** Arquivos são automaticamente organizados em pastas lógicas
+- **🔧 Flexibilidade:** Fácil troca de PDFs de entrada - apenas coloque na pasta `dados_fonte/pdfs/`
+- **📊 Integração Perfeita:** Dataset JSON é gerado automaticamente no formato correto para o DocETL
+- **⚡ Eficiência:** Processo de extração e preparação é feito em uma única execução
+- **🛡️ Robustez:** Tratamento de erros e validações automáticas em cada etapa
+
 ## 📊 Estrutura do Projeto
 
 ```
-DocETL/
-├── 📁 Arquivos_Suporte/          # Documentos de suporte e datasets
-├── 📁 Documentation/             # Documentação da biblioteca DocETL
-├── 📁 intermediate_results/      # Resultados intermediários do pipeline
-├── 📁 docetl/                   # Ambiente virtual Python
-├── 📄 .env_exemple              # Exemplo de configuração de ambiente
-├── 📄 .gitignore                # Arquivos ignorados pelo Git
-├── 📄 converter_utf8.py         # Utilitário para correção de codificação
-├── 📄 lgpd_dataset.json         # Dataset de entrada processado
-├── 📄 lgpd_summary_by_topic.json # Resultado final do pipeline
-├── 📄 L13709compilado.pdf_TEXT.txt # Texto extraído da LGPD
-├── 📄 make_lgpd_dataset.py      # Script de preparação do dataset
-├── 📄 pipeline.yaml             # Configuração do pipeline DocETL
-├── 📄 README.md                 # Este arquivo
-├── 📄 requirements.txt          # Dependências Python
-└── 📄 tree.txt                  # Estrutura de diretórios
+.
+├── 📄 converter_utf8.py         # Utilitário para correção de codificação UTF-8
+├── 📁 dados_fonte/              # Pasta organizada com PDFs e textos extraídos
+│   ├── 📁 pdfs/                 # PDFs de entrada para processamento
+│   │   └── L13709compilado.pdf  # PDF da Lei Geral de Proteção de Dados (LGPD)
+│   └── 📁 textos/               # Arquivos de texto extraídos automaticamente
+│       └── L13709compilado.pdf_TEXT.txt # Texto extraído do PDF pela biblioteca Docling
+├── 📁 intermediate_results/      # Resultados intermediários do pipeline DocETL
+│   ├── 📁 law_analysis_step/    # Resultados da etapa de análise dos artigos
+│   │   ├── analyze_article.json # Análises individuais de cada artigo da LGPD
+│   │   └── split_law_by_article.json # Divisão do documento em artigos individuais
+│   └── 📁 topic_summary_step/   # Resultados da etapa de resumo por tópicos
+│       └── summarize_by_topic.json # Resumos consolidados por grupos temáticos
+├── 📄 lgpd_dataset.json         # Dataset de entrada processado para o pipeline DocETL
+├── 📄 lgpd_summary_by_topic.json # Resultado final do pipeline com resumos temáticos
+├── 📄 make_dataset_docling.py   # Script principal que automatiza extração com Docling e geração do dataset
+├── 📄 pipeline.yaml             # Configuração do pipeline DocETL em formato YAML
+├── 📄 .env_exemple              # Arquivo de exemplo para configuração de variáveis de ambiente
+├── 📄 README.md                 # Documentação completa do projeto
+├── 📄 Relatório_DocETL.pdf      # Relatório técnico detalhado da análise da LGPD
+├── 📄 requirements.txt          # Lista de dependências Python do projeto
+└── 📄 tree.txt                  # Estrutura de diretórios do projeto
 ```
+
+### 📋 **Descrição Detalhada dos Arquivos**
+
+#### 🔧 **Scripts e Utilitários**
+
+- **`make_dataset_docling.py`**: Script principal que automatiza todo o processo de extração de dados. Utiliza a biblioteca Docling para converter PDFs em texto, organiza arquivos em pastas estruturadas, e gera automaticamente o dataset JSON no formato correto para o DocETL.
+
+- **`converter_utf8.py`**: Utilitário para correção de codificação de caracteres. Resolve problemas de visualização de acentos e caracteres especiais em arquivos JSON, convertendo-os para UTF-8 adequado.
+
+#### 📁 **Pasta dados_fonte/**
+
+- **`dados_fonte/pdfs/`**: Contém os PDFs de entrada para processamento. Atualmente contém o arquivo da LGPD, mas pode ser facilmente expandido para outros documentos.
+
+- **`dados_fonte/textos/`**: Armazena automaticamente os textos extraídos dos PDFs. Os arquivos são nomeados seguindo o padrão `[nome_original]_TEXT.txt`.
+
+#### 📊 **Resultados do Pipeline**
+
+- **`lgpd_dataset.json`**: Dataset de entrada para o pipeline DocETL. Contém o texto extraído da LGPD no formato estruturado esperado pela biblioteca.
+
+- **`lgpd_summary_by_topic.json`**: Resultado final do pipeline, contendo resumos temáticos consolidados da LGPD. Organiza as informações por 36 tópicos principais identificados automaticamente.
+
+- **`intermediate_results/`**: Diretório criado automaticamente pelo DocETL que armazena resultados intermediários de cada operação, facilitando depuração e análise do processo.
+
+#### ⚙️ **Configuração e Documentação**
+
+- **`pipeline.yaml`**: Arquivo de configuração declarativa que define todo o fluxo de trabalho do DocETL. Especifica operações de split, map e reduce para processamento da LGPD.
+
+- **`.env_exemple`**: Template para configuração de variáveis de ambiente, incluindo chaves de API necessárias para o funcionamento do sistema.
+
+- **`requirements.txt`**: Lista completa de dependências Python com versões específicas, incluindo Docling 2.29.0, DocETL e outras bibliotecas necessárias.
+
+- **`README.md`**: Documentação completa do projeto, incluindo instruções de instalação, uso e explicação detalhada do fluxo de trabalho.
+
+- **`Relatório_DocETL.pdf`**: Relatório técnico detalhado documentando todo o processo de análise da LGPD, incluindo metodologia, resultados e reflexões sobre o uso da biblioteca DocETL.
+
+- **`tree.txt`**: Representação textual da estrutura de diretórios do projeto para referência rápida.
 
 ## 🔧 Configuração Avançada
 
@@ -339,7 +420,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 Este relatório documenta o processo de utilização da biblioteca de processamento de documentos `DocETL` para realizar uma análise estruturada e temática da Lei Geral de Proteção de Dados do Brasil (LGPD, LEI Nº 13.709). O objetivo foi testar as capacidades da biblioteca em um cenário real e complexo, transformando um longo e denso texto jurídico em um sumário organizado por temas.
 
-O projeto partiu de uma configuração inicial robusta. Primeiramente, o texto da lei foi extraído de seu arquivo PDF original utilizando a biblioteca `Docling`. Em seguida, um script customizado foi utilizado para processar e estruturar este conteúdo no formato esperado pela biblioteca `DocETL`, gerando o arquivo de dataset `lgpd_dataset.json`. A partir deste ponto, com o ambiente Python devidamente configurado com as chaves de API da OpenAI, a metodologia adotada envolveu a criação iterativa de um pipeline em YAML, com depuração e análise dos resultados a cada passo.
+O projeto partiu de uma configuração inicial robusta. Primeiramente, o texto da lei foi extraído de seu arquivo PDF original utilizando a biblioteca `Docling` através do script `make_dataset_docling.py`. Este script automatiza todo o processo: extrai o texto do PDF, salva na pasta organizada `dados_fonte/textos/`, e gera automaticamente o arquivo de dataset `lgpd_dataset.json` no formato esperado pela biblioteca `DocETL`. A partir deste ponto, com o ambiente Python devidamente configurado com as chaves de API da OpenAI, a metodologia adotada envolveu a criação iterativa de um pipeline em YAML, com depuração e análise dos resultados a cada passo.
 
 ## 2. Metodologia e Execução do Pipeline
 
@@ -459,18 +540,22 @@ A execução do pipeline e os scripts de preparação resultaram na seguinte est
 │   │   └── split_law_by_article.json
 │   └── topic_summary_step/
 │       └── summarize_by_topic.json
-├── L13709compilado.pdf_TEXT.txt
+├── dados_fonte/
+│   ├── pdfs/
+│   │   └── L13709compilado.pdf
+│   └── textos/
+│       └── L13709compilado_TEXT.txt
 ├── lgpd_dataset.json
 ├── lgpd_summary_by_topic.json
-├── make_lgpd_dataset.py
+├── make_dataset_docling.py
 └── pipeline.yaml
 
 ```
 
 - **`pipeline.yaml`**: Arquivo de configuração que define todas as etapas e operações do pipeline do DocETL.
-- **`make_lgpd_dataset.py`**: Script customizado para ler o texto extraído e formatá-lo.
+- **`make_dataset_docling.py`**: Script principal que utiliza Docling para extrair texto de PDFs e gerar o dataset JSON.
 - **`converter_utf8.py`**: Script utilitário para corrigir a codificação de caracteres do arquivo de saída.
-- **`L13709compilado.pdf_TEXT.txt`**: Texto puro da LGPD, extraído do PDF pela biblioteca `Docling`.
+- **`dados_fonte/`**: Pasta organizada contendo PDFs de entrada e textos extraídos automaticamente.
 - **`lgpd_dataset.json`**: Dataset de entrada para o pipeline, formatado na estrutura correta.
 - **`intermediate_results/`**: Diretório criado automaticamente pelo DocETL para armazenar os resultados de cada operação, facilitando a depuração.
 - **`lgpd_summary_by_topic.json`**: O arquivo final, contendo o resumo temático da LGPD.
@@ -515,7 +600,7 @@ Essa distribuição de tokens e chamadas pode ser explicada da seguinte forma:
 - **57 Chamadas na Etapa `Map`:** A operação `analyze_article` processou cada um dos **57 chunks** de texto. Para cada chamada, os tokens de entrada consistiram no texto do artigo da lei mais as instruções do prompt. Os tokens de saída foram o JSON estruturado com o tópico e o resumo. Esta etapa foi responsável pela maior parte dos tokens de entrada.
 - **36 Chamadas na Etapa `Reduce`:** A operação `summarize_by_topic` foi executada para cada um dos **36 tópicos únicos** identificados. Para cada chamada, os tokens de entrada foram os resumos dos artigos daquele tópico mais as instruções do prompt de síntese. Os tokens de saída foram o parágrafo final consolidado.
 
-![Imagem do Dashboard de gerenciamento da API OpenAI](OpenAI.png)
+![Imagem do Dashboard de gerenciamento da API OpenAI](Documentation/OpenAI.png)
 
 Imagem do Dashboard de gerenciamento da API OpenAI
 
