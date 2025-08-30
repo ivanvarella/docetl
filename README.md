@@ -69,24 +69,55 @@ cd docetl
 
 ### 2. Crie um Ambiente Virtual
 
-```bash
-# Usando venv (recomendado)
-python -m venv docetl_env
+#### **Linux/macOS:**
 
-# Ativação no macOS/Linux
+```bash
+# Usando uv (recomendado - mais rápido)
+uv venv docetl_env
 source docetl_env/bin/activate
 
-# Ativação no Windows
+# Usando venv tradicional
+python -m venv docetl_env
+source docetl_env/bin/activate
+```
+
+#### **Windows:**
+
+```cmd
+# Usando uv (recomendado - mais rápido)
+uv venv docetl_env
+docetl_env\Scripts\activate
+
+# Usando venv tradicional
+python -m venv docetl_env
 docetl_env\Scripts\activate
 ```
 
 ### 3. Instale as Dependências
 
+#### **Linux/macOS:**
+
 ```bash
+# Com uv (recomendado)
+uv pip install -r requirements.txt
+
+# Com pip tradicional
+pip install -r requirements.txt
+```
+
+#### **Windows:**
+
+```cmd
+# Com uv (recomendado)
+uv pip install -r requirements.txt
+
+# Com pip tradicional
 pip install -r requirements.txt
 ```
 
 ### 4. Configure as Variáveis de Ambiente
+
+#### **Linux/macOS:**
 
 ```bash
 # Copie o arquivo de exemplo
@@ -94,6 +125,20 @@ cp .env_exemple .env
 
 # Edite o arquivo .env com sua chave da OpenAI
 nano .env
+# ou
+code .env
+```
+
+#### **Windows:**
+
+```cmd
+# Copie o arquivo de exemplo
+copy .env_exemple .env
+
+# Edite o arquivo .env com sua chave da OpenAI
+notepad .env
+# ou
+code .env
 ```
 
 **Conteúdo do arquivo .env:**
@@ -104,15 +149,25 @@ OPENAI_API_KEY=sua_chave_api_aqui
 
 ### 5. Verifique a Instalação
 
+#### **Linux/macOS:**
+
 ```bash
-python -c "import docetl; print('DocETL instalado com sucesso!')"
+docetl version
+```
+
+#### **Windows:**
+
+```cmd
+docetl version
 ```
 
 ## 🚀 Como Usar
 
 ### Execução Básica
 
-1. **Prepare o Dataset**
+#### **Linux/macOS:**
+
+1. **Prepare o Dataset (o arquivo já está preparado, testar com outro arquivo, neste caso faça as alterações necessárias no script antes de executa-lo)**
 
 ```bash
 python make_lgpd_dataset.py
@@ -124,7 +179,7 @@ python make_lgpd_dataset.py
 docetl run pipeline.yaml
 ```
 
-3. **Verifique os Resultados**
+3. **Verifique os Resultados (os arquivos também já estão gerados)**
 
 ```bash
 # Resultados finais
@@ -132,6 +187,30 @@ cat lgpd_summary_by_topic.json
 
 # Resultados intermediários
 ls intermediate_results/
+```
+
+#### **Windows:**
+
+1. **Prepare o Dataset Prepare o Dataset (o arquivo já está preparado, testar com outro arquivo, neste caso faça as alterações necessárias no script antes de executa-lo)**
+
+```cmd
+python make_lgpd_dataset.py
+```
+
+2. **Execute o Pipeline**
+
+```cmd
+docetl run pipeline.yaml
+```
+
+3. **Verifique os Resultados (os arquivos também já estão gerados)**
+
+```cmd
+# Resultados finais
+type lgpd_summary_by_topic.json
+
+# Resultados intermediários
+dir intermediate_results\
 ```
 
 ### Estrutura do Pipeline
@@ -150,38 +229,6 @@ Edite o arquivo `pipeline.yaml` para:
 - Modificar prompts de análise
 - Ajustar parâmetros de processamento
 - Adicionar novas operações
-
-## 🧪 Testes
-
-### Teste de Funcionamento Básico
-
-```bash
-# Teste de importação
-python -c "import docetl, openai, pymupdf; print('Todas as dependências funcionando!')"
-
-# Teste de configuração
-python -c "import yaml; yaml.safe_load(open('pipeline.yaml')); print('Pipeline válido!')"
-```
-
-### Teste de Pipeline
-
-```bash
-# Execução com dados de teste
-docetl run pipeline.yaml --dry-run
-
-# Execução completa
-docetl run pipeline.yaml
-```
-
-### Validação de Resultados
-
-```bash
-# Verificar estrutura JSON
-python -c "import json; data=json.load(open('lgpd_summary_by_topic.json')); print(f'Processados {len(data)} tópicos')"
-
-# Verificar codificação UTF-8
-python converter_utf8.py
-```
 
 ## 📊 Estrutura do Projeto
 
@@ -208,7 +255,19 @@ DocETL/
 
 ### Otimização de Performance
 
+#### **Linux/macOS:**
+
 ```bash
+# Usar otimizador automático
+docetl build pipeline.yaml
+
+# Executar com cache limpo
+docetl run pipeline.yaml --clear-cache
+```
+
+#### **Windows:**
+
+```cmd
 # Usar otimizador automático
 docetl build pipeline.yaml
 
@@ -218,7 +277,19 @@ docetl run pipeline.yaml --clear-cache
 
 ### Logs e Debugging
 
+#### **Linux/macOS:**
+
 ```bash
+# Execução com logs detalhados
+docetl run pipeline.yaml --verbose
+
+# Verificar status do cache
+docetl cache status
+```
+
+#### **Windows:**
+
+```cmd
 # Execução com logs detalhados
 docetl run pipeline.yaml --verbose
 
@@ -250,38 +321,11 @@ default_model: gpt-4o-mini # ou gpt-4, gpt-3.5-turbo, etc.
 - **Processamento em Lotes**: Agrupamento eficiente de operações
 - **Validação de Schema**: Estrutura de dados consistente
 
-## 🤝 Contribuição
-
-### Como Contribuir
-
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-### Padrões de Código
-
-- Use Python 3.8+ syntax
-- Siga PEP 8 para formatação
-- Documente funções e classes
-- Adicione testes para novas funcionalidades
-
 ## 📝 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## 🙏 Agradecimentos
-
-- **DocETL Team** - Biblioteca principal utilizada
-- **OpenAI** - Modelos de IA para processamento de linguagem
-- **Comunidade Python** - Ferramentas e bibliotecas de suporte
-
-## 📞 Suporte
-
-- **Issues**: Use o sistema de issues do GitHub
-- **Documentação**: Consulte a pasta `Documentation/`
-- **Exemplos**: Veja os arquivos de configuração e scripts
+</br></br></br></br>
 
 ---
 
