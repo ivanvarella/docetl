@@ -58,8 +58,13 @@ Este projeto demonstra o uso da biblioteca **DocETL** para análise inteligente 
 ### 1. Clone o Repositório
 
 ```bash
-git clone <url-do-repositorio>
-cd DocETL
+# Via HTTPS
+git clone https://github.com/ivanvarella/docetl.git
+cd docetl
+
+# Via SSH
+git clone git@github.com:ivanvarella/docetl.git
+cd docetl
 ```
 
 ### 2. Crie um Ambiente Virtual
@@ -466,7 +471,7 @@ Essa distribuição de tokens e chamadas pode ser explicada da seguinte forma:
 - **57 Chamadas na Etapa `Map`:** A operação `analyze_article` processou cada um dos **57 chunks** de texto. Para cada chamada, os tokens de entrada consistiram no texto do artigo da lei mais as instruções do prompt. Os tokens de saída foram o JSON estruturado com o tópico e o resumo. Esta etapa foi responsável pela maior parte dos tokens de entrada.
 - **36 Chamadas na Etapa `Reduce`:** A operação `summarize_by_topic` foi executada para cada um dos **36 tópicos únicos** identificados. Para cada chamada, os tokens de entrada foram os resumos dos artigos daquele tópico mais as instruções do prompt de síntese. Os tokens de saída foram o parágrafo final consolidado.
 
-![Imagem do Dashboard de gerenciamento da API OpenAI](attachment:b82932ed-f73c-4c12-9070-50aeeb773f3e:image.png)
+![Imagem do Dashboard de gerenciamento da API OpenAI](OpenAI.png)
 
 Imagem do Dashboard de gerenciamento da API OpenAI
 
