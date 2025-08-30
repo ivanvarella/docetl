@@ -1,0 +1,16 @@
+.
+├── converter_utf8.py
+├── intermediate_results
+│   ├── law_analysis_step
+│   │   ├── analyze_article.json
+│   │   └── split_law_by_article.json
+│   └── topic_summary_step
+│       └── summarize_by_topic.json
+├── L13709compilado.pdf_TEXT.txt
+├── lgpd_dataset.json
+├── lgpd_summary_by_topic.json
+├── make_lgpd_dataset.py
+├── pipeline.yaml
+└── tree.txt
+
+4 directories, 10 files

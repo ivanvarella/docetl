@@ -1,0 +1,182 @@
+[
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece que controladores e operadores de dados pessoais devem adotar regras de boas práticas e governança, ressaltando a importância de avaliar a natureza e os riscos associados ao tratamento de dados. A legislação orienta a criação de diretrizes específicas para a implementação de um programa de governança em privacidade, promovendo uma abordagem sistemática e responsável na proteção de dados pessoais.",
+    "topic": "Regras de Boas Práticas e Governança em Proteção de Dados",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) regulamenta o tratamento de dados pessoais no Brasil, com o objetivo de proteger os direitos fundamentais como liberdade, privacidade e desenvolvimento da personalidade. Esta legislação é de observância obrigatória para todas as esferas governamentais, assegurando que o tratamento de dados pessoais seja realizado de forma ética e responsável, promovendo a transparência e a segurança das informações dos cidadãos.",
+    "topic": "Tratamento de Dados Pessoais",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) aborda os dados anonimizados estabelecendo que estes não são considerados dados pessoais, exceto quando a anonimização pode ser revertida. A legislação define critérios para determinar essa possível reclassificação e delega à autoridade nacional a competência para regulamentar os métodos de anonimização, garantindo assim uma proteção adequada e a segurança dos dados.",
+    "topic": "Dados Anonimizados",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) aborda as bases legais que fundamentam o tratamento de dados pessoais, destacando entre elas o legítimo interesse do controlador. Este artigo enfatiza que o tratamento de dados sensíveis é permitido em situações específicas, delineando as exceções em que o consentimento do titular não é necessário. Assim, a LGPD busca equilibrar a proteção dos dados pessoais com as necessidades legítimas dos controladores, assegurando a privacidade dos titulares enquanto possibilita a utilização de suas informações em contextos apropriados.",
+    "topic": "Bases Legais",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "No tocante às Disposições Gerais e Vigência da Lei Geral de Proteção de Dados (LGPD), o artigo 64 enfatiza que os direitos e princípios estabelecidos pela lei não excluem aqueles que possam ser previstos em outras legislações nacionais ou em tratados internacionais, assegurando um conjunto de proteções mais amplo ao titular de dados. Complementando, o artigo 65 determina a vigência de diversos artigos da LGPD, estipulando datas específicas para a entrada em vigor de cada uma de suas disposições, o que estabelece um cronograma claro para a implementação das normas de proteção de dados.",
+    "topic": "Disposições Gerais e Vigência",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) prevê, no artigo 55-G, que a estrutura regimental da Autoridade Nacional de Proteção de Dados (ANPD) será estabelecida por um ato do Presidente da República, contando com o suporte técnico e administrativo da Casa Civil até que essa estrutura esteja plenamente implementada. Além disso, a LGPD determina que o Conselho Diretor da ANPD é responsável por elaborar o regimento interno da entidade, definindo assim as diretrizes para a sua organização e funcionamento.",
+    "topic": "Estrutura da ANPD",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) define as competências da Autoridade Nacional de Proteção de Dados (ANPD), que são fundamentais para a implementação e supervisão da proteção de dados pessoais no Brasil. Entre essas competências, destacam-se a proteção dos dados pessoais, a fiscalização do tratamento desses dados, e a promoção de diretrizes que orientem a política de proteção. A ANPD também desempenha um papel crucial na governança e na responsabilidade sobre a proteção de dados, assegurando que as normas estabelecidas pela LGPD sejam cumpridas e que os direitos dos titulares de dados sejam respeitados.",
+    "topic": "Competências da ANPD",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) aborda o término do tratamento de dados pessoais estabelecendo condições específicas para o encerramento desse processo. Isso inclui a necessidade de verificar se a finalidade para a qual os dados foram coletados foi alcançada, o término do período de tratamento definido, a revogação do consentimento pelo titular dos dados e ainda determinações da autoridade nacional em casos de violação da legislação. Essas diretrizes visam garantir a proteção dos dados pessoais e o respeito aos direitos dos titulares.",
+    "topic": "Término do Tratamento de Dados Pessoais",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) aborda o Conselho Diretor ao estabelecer as condições para a perda de cargos de seus membros. De acordo com a legislação, a destituição pode ocorrer por renúncia, condenação judicial transitada em julgado ou por meio de demissão após a realização de um processo administrativo disciplinar. Além disso, a LGPD define responsabilidades quanto à instauração e condução desses processos, garantindo a devida organização e transparência nas ações do Conselho.",
+    "topic": "Conselho Diretor",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) enfatiza a importância de boas práticas e governança no tratamento de dados pessoais, estabelecendo que os sistemas utilizados para essa finalidade devem ser projetados de maneira a assegurar a segurança dos dados, respeitar os princípios gerais da lei e seguir normas pertinentes. Isso implica na adoção de medidas e procedimentos que garantam não apenas a proteção dos dados, mas também a transparência e a responsabilidade nas atividades de tratamento, visando fortalecer a confiança dos titulares dos dados.",
+    "topic": "Boas Práticas e Governança",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece que o tratamento de dados pessoais pelo Poder Público deve ser realizado com a finalidade de atender a interesses públicos, assegurando a transparência nas suas ações. Além disso, a LGPD determina a necessidade de indicar um encarregado para supervisionar essas operações e exige que o tratamento respeite legislações específicas que garantem os direitos dos titulares dos dados, promovendo um equilíbrio entre a atuação do Estado e a proteção da privacidade dos cidadãos.",
+    "topic": "Tratamento de Dados Pessoais pelo Poder Público",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece que, em caso de incidentes de segurança que possam representar riscos relevantes aos titulares, o controlador deve comunicar tanto à autoridade nacional quanto aos próprios titulares. Essa comunicação deve incluir a natureza dos dados afetados, informações sobre os titulares, as medidas de segurança que foram implementadas, os riscos relacionados ao incidente, justificativas para possíveis atrasos na comunicação e as ações adotadas para mitigar eventuais prejuízos. Além disso, a autoridade nacional tem a prerrogativa de determinar medidas adicionais a serem tomadas para assegurar a proteção dos direitos dos titulares.",
+    "topic": "Comunicação de Incidentes de Segurança",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece diretrizes rigorosas para o tratamento de dados pessoais pelo Poder Público, permitindo o uso compartilhado dessas informações apenas para finalidades específicas relacionadas a políticas públicas. Além disso, a legislação determina que tal tratamento deve respeitar os princípios fundamentais de proteção de dados, garantindo a privacidade e a segurança das informações. Em certas circunstâncias, a LGPD também prevê exceções que possibilitam a transferência de dados pessoais a entidades privadas, desde que cumpridos os requisitos legais, o que reforça a necessidade de um manejo responsável e transparente das informações pelo setor público.",
+    "topic": "Tratamento de Dados pelo Poder Público",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados Pessoais (LGPD), sancionada pelo Presidente da República, estabelece diretrizes fundamentais para a proteção de dados pessoais no Brasil. A vigência da LGPD foi confirmada com a publicação da Lei nº 13.853, de 2019, que trouxe alterações na redação original, reafirmando a importância e a necessidade de regulamentação do tratamento de dados pessoais, refletindo um compromisso do país com a privacidade e a proteção dos direitos dos titulares de dados.",
+    "topic": "Vigência",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece exceções ao tratamento de dados pessoais, determinando situações em que a legislação não se aplica. Entre essas exceções, incluem-se o tratamento de dados realizado por indivíduos para fins pessoais, atividades jornalísticas, e ações voltadas à segurança e defesa pública. Além disso, o artigo aborda limitações e requisitos específicos para o tratamento de dados efetuado por entidades privadas, assegurando que, mesmo nas exceções, haja a consideração de princípios de proteção de dados.",
+    "topic": "Exceções ao Tratamento de Dados Pessoais",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) enfatiza a responsabilidade em casos de violação dos direitos dos titulares, especialmente no contexto de relações de consumo. O texto legal estabelece que a responsabilidade em tais situações deve observar as normas já vigentes na legislação pertinente, destacando a relevância da segurança e do sigilo dos dados pessoais. Essa abordagem visa garantir que as entidades responderão adequadamente por quaisquer infrações, promovendo a proteção dos dados e dos direitos dos indivíduos.",
+    "topic": "Responsabilidade",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece sua aplicabilidade em diversas condições relacionadas ao tratamento de dados pessoais. A legislação se aplica não apenas quando o tratamento ocorre em território nacional, mas também quando as operações envolvem a oferta de bens ou serviços a pessoas localizadas no Brasil, independentemente da localização do controlador dos dados. Além disso, a LGPD é relevante nas circunstâncias de coleta de dados pessoais, assegurando que sejam respeitados os direitos dos titulares em qualquer situação de tratamento de dados que envolva indivíduos brasileiros.",
+    "topic": "Aplicabilidade da Lei",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece competências exclusivas para a Autoridade Nacional de Proteção de Dados (ANPD), que incluem a aplicação de sanções e a proteção dos dados pessoais dos cidadãos. Adicionalmente, a LGPD define a estrutura do Conselho Nacional de Proteção de Dados Pessoais e da Privacidade, elucidando sua composição e responsabilidades. Esse conselho tem um papel fundamental na supervisão e na orientação das práticas relacionadas à proteção de dados, garantindo que as diretrizes da LGPD sejam cumpridas e promovendo um ambiente de privacidade e segurança para os dados pessoais.",
+    "topic": "Competências da ANPD e Estrutura do Conselho Nacional de Proteção de Dados Pessoais",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece diretrizes claras sobre a composição, nomeação, requisitos e mandato dos membros do Conselho Diretor da Autoridade Nacional de Proteção de Dados (ANPD). Essas normas visam garantir a seleção adequada dos integrantes deste órgão, que desempenha funções essenciais na supervisão e implementação das normas de proteção de dados pessoais no Brasil. O Conselho é composto por profissionais com experiências relevantes e formação específica, assegurando a competência técnica necessária para o efetivo funcionamento da ANPD e a promoção dos direitos de proteção de dados dos cidadãos.",
+    "topic": "Composição e Mandato do Conselho Diretor da ANPD",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece que, em casos de infração à lei decorrente do tratamento de dados pessoais por órgãos públicos, a Autoridade Nacional de Proteção de Dados (ANPD) possui a prerrogativa de enviar um informe às entidades relacionadas, indicando as medidas necessárias para interromper a violação. Essa determinação reflete o papel da ANPD como reguladora e responsável por assegurar a conformidade com a LGPD, garantindo assim a proteção dos dados pessoais e a responsabilização dos agentes envolvidos no tratamento inadequado dessas informações.",
+    "topic": "Autoridade Nacional e Infrações",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece fundamentos essenciais para a proteção de dados pessoais, destacando o respeito à privacidade e à autodeterminação informativa dos indivíduos. Além disso, a LGPD enfatiza a inviolabilidade da intimidade e a relevância de valores como o desenvolvimento econômico e a dignidade humana. Esses princípios refletem a importância dos direitos individuais e da defesa do consumidor, consagrando a proteção de dados como um pilar fundamental para a promoção da liberdade e do respeito nas relações sociais e comerciais.",
+    "topic": "Fundamentos da Proteção de Dados Pessoais",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece um conjunto de princípios fundamentais que devem ser observados no tratamento de dados pessoais, visando garantir a proteção dos direitos dos titulares. Entre esses princípios estão a finalidade, adequação e necessidade, que orientam a coleta e utilização de dados, assegurando que as operações de tratamento sejam realizadas de maneira ética e responsável. Além disso, a LGPD define as condições específicas sob as quais o tratamento de dados pode ocorrer, promovendo um ambiente que respeita a privacidade e a segurança das informações pessoais.",
+    "topic": "Princípios e Requisitos para o Tratamento de Dados Pessoais",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece no artigo referente ao Relatório de Impacto à Proteção de Dados que a autoridade nacional possui a competência para exigir que o controlador de dados elabore um relatório detalhado. Este relatório deve incluir informações sobre os tipos de dados pessoais coletados, as metodologias utilizadas para a sua coleta e as medidas de mitigação de riscos adotadas para assegurar a proteção desses dados. O objetivo principal é garantir a transparência e a proteção dos dados sensíveis, permitindo uma análise dos potenciais impactos à privacidade dos titulares.",
+    "topic": "Relatório de Impacto à Proteção de Dados",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece diretrizes rigorosas para o tratamento de dados sensíveis, especialmente no contexto da saúde pública. Ela permite o acesso a dados pessoais por órgãos de pesquisa, desde que sejam respeitadas condições que garantam a segurança e a ética no manejo dessas informações. Isso inclui a exigência de anonimização ou pseudonimização dos dados, assegurando que a divulgação dos resultados da pesquisa não revele a identidade dos indivíduos envolvidos. Dessa forma, a LGPD promove a proteção da privacidade enquanto possibilita avanços em pesquisas de saúde.",
+    "topic": "Tratamento de Dados Sensíveis",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece diretrizes específicas para o tratamento de dados pessoais de crianças e adolescentes, enfatizando que tal tratamento deve ser sempre orientado pelo melhor interesse dos menores. Para que os dados sejam coletados e utilizados, é necessário obter o consentimento explícito dos pais ou responsáveis legais, garantindo, assim, a participação ativa destes no processo de proteção da privacidade dos jovens. Além disso, a LGPD exige que os controladores de dados forneçam informações claras e acessíveis sobre as práticas de coleta e uso, assegurando que a privacidade e os direitos das crianças e adolescentes sejam respeitados ao longo de todo o processo.",
+    "topic": "Tratamento de Dados Pessoais de Crianças e Adolescentes",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) aborda o tratamento de dados pessoais de forma a garantir sua eliminação após o término do processamento, salvo exceções específicas como cumprimento de obrigações legais ou finalidades de pesquisa com anonimização. Além disso, a LGPD determina que os dados devem ser mantidos em um formato que possibilite seu uso compartilhado, visando à execução de políticas públicas e à transparência no acesso à informação. A legislação também considera irregular o tratamento que não respeite a segurança dos dados, responsabilizando o controlador ou operador por danos decorrentes de violações de segurança ou pela falta de medidas adequadas para proteção, levando em conta o modo de tratamento e os riscos envolvidos.",
+    "topic": "Tratamento de Dados",
+    "_counts_prereduce_summarize_by_topic": 3
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece que o consentimento do titular é essencial para o tratamento de seus dados pessoais, exigindo que este seja explícito e informado. O controlador dos dados deve seguir normas rigorosas para a obtenção desse consentimento, além de garantir a possibilidade de revogação a qualquer momento pelo titular. A legislação também prevê que o controlador deve comunicar sobre qualquer alteração que possa impactar a natureza do consentimento, assegurando que o titular esteja sempre ciente dos termos em que seus dados são tratados. A LGPD busca, assim, proteger a privacidade dos indivíduos e garantir que seus dados sejam utilizados de maneira ética e responsável.",
+    "topic": "Consentimento",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) aborda o tema \"Definições de Dados e Agentes de Tratamento\" ao estabelecer conceitos fundamentais que classificam os dados pessoais e identificam os tipos de agentes envolvidos no tratamento desses dados. A lei define claramente as categorias de dados pessoais, como dados sensíveis e dados anônimos, além de especificar as responsabilidades dos agentes de tratamento, como controladores e operadores. Esse arcabouço conceitual é essencial para garantir a proteção dos direitos dos titulares de dados, formando a base sobre a qual as operações de tratamento são regulamentadas e protegidas, visando à transparência e à segurança das informações pessoais.",
+    "topic": "Definições de Dados e Agentes de Tratamento",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) aborda a comunicação e uso compartilhado de dados pessoais, especialmente no contexto de transferências entre entidades públicas e privadas. O artigo relevante estabelece que, quando dados pessoais de pessoa jurídica de direito público são compartilhados com pessoas de direito privado, essa comunicação deve ser informada à Autoridade Nacional de Proteção de Dados e necessita do consentimento do titular dos dados. No entanto, existem exceções previstas na própria LGPD que permitem o compartilhamento sem a necessidade de consentimento, evidenciando a necessidade de transparência e respeito às diretrizes legais para o tratamento de dados pessoais.",
+    "topic": "Comunicação e Uso Compartilhado de Dados",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece que a Autoridade Nacional de Proteção de Dados e o Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) são responsáveis por elaborar regulamentos específicos para o acesso a dados educacionais tratados pela União. Essa regulamentação visa assegurar o cumprimento das legislações educacionais existentes, como a Lei de Diretrizes e Bases da Educação Nacional e a Lei do Sistema Nacional de Avaliação da Educação Superior, garantindo a proteção dos dados enquanto facilita o uso responsável e adequado desses dados no âmbito educacional.",
+    "topic": "Regulamentação do Acesso a Dados Educacionais",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) estabelece a obrigatoriedade de que o controlador de dados pessoais aponte um encarregado pelo tratamento desses dados, cuja função é assegurar a conformidade com a legislação vigente e atuar como canal de comunicação entre o controlador, os titulares dos dados e a Autoridade Nacional de Proteção de Dados. O encarregado tem atribuições específicas definidas na lei, e suas informações devem ser divulgadas publicamente, o que garante transparência e facilita o acesso dos titulares a seus direitos. Além disso, a Autoridade Nacional pode elaborar normas complementares que detalhem ainda mais essa função, refletindo a importância do papel do encarregado na proteção dos dados pessoais.",
+    "topic": "Encarregado pelo Tratamento de Dados Pessoais",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) prevê sanções administrativas que podem ser impostas pela autoridade nacional aos agentes de tratamento de dados em caso de infrações, incluindo advertências, multas e outras penalidades. O artigo 53 determina que a autoridade deve elaborar regulamentos específicos sobre as sanções, com metodologias claras para o cálculo das multas, os quais devem ser publicados para consulta pública, garantindo transparência sobre a aplicação das penalidades. Além disso, são estabelecidas diretrizes para a aplicação de multas diárias, levando em consideração a gravidade da infração e o dano causado, e exigindo que a intimação da sanção contenha informações detalhadas sobre a obrigação imposta e o valor da multa.",
+    "topic": "Sanções Administrativas",
+    "_counts_prereduce_summarize_by_topic": 3
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) assegura diversos direitos ao titular de dados pessoais, que incluem o direito de acessar, corrigir, eliminar, portar e revogar consentimentos sobre suas informações, garantindo assim o controle sobre seus dados. O titular tem direito a informações claras e transparentes sobre o tratamento de seus dados, podendo solicitar a revisão de decisões automatizadas que impactem seus interesses, com acesso aos critérios usados e possibilidade de auditoria pela autoridade nacional em caso de falta de transparência. Ademais, é reconhecido que cada indivíduo é titular de seus dados, resguardando seus direitos fundamentais de liberdade, intimidade e privacidade.",
+    "topic": "Direitos do Titular",
+    "_counts_prereduce_summarize_by_topic": 5
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) aborda a responsabilidade civil dos controladores e operadores de dados pessoais, estabelecendo que ambos são responsáveis pela reparação de danos causados a terceiros em decorrência de atividades de tratamento de dados. A legislação prevê a responsabilidade solidária entre essas partes, a possibilidade de inversão do ônus da prova em ações judiciais, bem como a possibilidade de ações coletivas para a defesa de direitos difusos. Além disso, a LGPD assegura o direito de regresso, permitindo que os responsáveis busquem reparação de danos entre si em situações específicas.",
+    "topic": "Responsabilidade civil",
+    "_counts_prereduce_summarize_by_topic": 1
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) brasileira estabelece, em seus artigos relacionados à transferência internacional de dados, diversas condições que devem ser cumpridas para que tal transferência seja permitida. Inicialmente, é exigida a proteção adequada dos dados pessoais transferidos, podendo ocorrer mediante garantias do controlador ou consentimento do titular. A avaliação do nível de proteção oferecido por países estrangeiros ou organizações internacionais é de responsabilidade da autoridade nacional, que deve considerar fatores como normas legais, a natureza dos dados, princípios de proteção, medidas de segurança e garantias judiciais. Além disso, a definição e a verificação de cláusulas contratuais específicas são responsabilidade da autoridade nacional, que deve assegurar a conformidade com as garantias mínimas e os direitos previstos na LGPD.",
+    "topic": "Transferência Internacional de Dados",
+    "_counts_prereduce_summarize_by_topic": 3
+  },
+  {
+    "topic_summary": "A Lei Geral de Proteção de Dados (LGPD) aborda o tema dos Agentes de Tratamento destacando a responsabilidade e as obrigações de entes públicos e privados na gestão de dados pessoais. Especificamente, estabelece que entidades públicas e sociedades de economia mista em regime de concorrência devem ser tratadas como pessoas jurídicas de direito privado, permitindo à autoridade nacional a solicitação de informações sobre operações de tratamento realizadas por esses órgãos. A autoridade também detém a competência para criar normas sobre comunicação de dados e implementar políticas públicas. Os agentes de tratamento, tanto controladores quanto operadores, são responsáveis por assegurar a conformidade com as normas de proteção, mantendo registros e adotando medidas de segurança para proteger os dados. Eles podem se eximir de responsabilidade ao comprovar que não houve violação das normas, enquanto devem garantir a segurança da informação, mesmo após a finalização do tratamento. Além disso, a violação das normas pode ser considerada ato de improbidade administrativa, enfatizando a seriedade da proteção de dados no Brasil.",
+    "topic": "Agentes de Tratamento",
+    "_counts_prereduce_summarize_by_topic": 12
+  }
+]

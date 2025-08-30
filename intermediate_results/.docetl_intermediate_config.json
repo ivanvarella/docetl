@@ -1,0 +1,9 @@
+{
+  "law_analysis_step": {
+    "split_law_by_article": "d454a6e280a29bfdc2ac2c5ec04181672d5a8a6d20ac5ce17e1f1ec11bdf871b",
+    "analyze_article": "b688f5560a4c2b1d408dde0e6e1156e9bb801eb3555375fae50adb30bf5ffab6"
+  },
+  "topic_summary_step": {
+    "summarize_by_topic": "adc9dca42377fd75abb1b5ca8d173a514b3d0f75b3af547fabd1364a65896360"
+  }
+}

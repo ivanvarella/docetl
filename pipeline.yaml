@@ -1,0 +1,70 @@
+datasets:
+  lgpd_dataset:
+    type: file
+    path: "lgpd_dataset.json"
+
+default_model: gpt-4o-mini
+system_prompt:
+  dataset_description: "O conteúdo da Lei Geral de Proteção de Dados do Brasil (LGPD - LEI Nº 13.709)."
+  persona: "Um assistente jurídico especialista em legislação brasileira, focado em análise e síntese de textos legais."
+
+operations:
+  - name: split_law_by_article
+    type: split
+    split_key: src
+    method: delimiter
+    method_kwargs:
+      delimiter: "- Art."
+      num_splits_to_group: 1
+
+  - name: analyze_article
+    type: map
+    prompt: |
+      Analise o seguinte trecho da Lei Geral de Proteção de Dados (LGPD) do Brasil:
+      "{{ input.src_chunk }}"
+
+      Com base no texto, forneça as seguintes informações:
+      1.  **Tópico Principal**: Identifique e retorne o tema central deste artigo (ex: "Princípios", "Direitos do Titular", "Bases Legais", "Tratamento de Dados Sensíveis", "Sanções Administrativas", "Transferência Internacional de Dados", "Agentes de Tratamento").
+      2.  **Resumo**: Crie um resumo conciso (1-2 sentenças) explicando o propósito principal deste artigo.
+    output:
+      schema:
+        topic: "string"
+        summary: "string"
+
+  # --- SEÇÃO MODIFICADA ---
+  - name: summarize_by_topic
+    type: reduce
+    reduce_key: topic
+    prompt: |
+      Você recebeu vários artigos da LGPD que tratam sobre o mesmo tópico: "{{ reduce_key }}".
+
+      Abaixo estão os resumos de cada artigo relacionado a este tópico:
+      {% for item in inputs %}
+      - Artigo: {{ item.summary }}
+      {% endfor %}
+
+      Sintetize todas essas informações em um parágrafo coeso e abrangente que explique como a LGPD aborda o tópico de "{{ reduce_key }}".
+    output:
+      # O schema agora define APENAS o que o LLM deve gerar.
+      # A chave 'topic' (a reduce_key) será adicionada automaticamente pelo DocETL.
+      schema:
+        topic_summary: "string"
+  # --- FIM DA SEÇÃO MODIFICADA ---
+
+pipeline:
+  steps:
+    - name: law_analysis_step
+      input: lgpd_dataset
+      operations:
+        - split_law_by_article
+        - analyze_article
+
+    - name: topic_summary_step
+      input: law_analysis_step
+      operations:
+        - summarize_by_topic
+
+  output:
+    type: file
+    path: "lgpd_summary_by_topic.json"
+    intermediate_dir: "intermediate_results"
